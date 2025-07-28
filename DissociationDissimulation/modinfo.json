@@ -2,7 +2,7 @@
   "name": "Dissociation Dissimulation",
   "author": "Aidanamite",
   "description": "Wearing an animal's head will reduce animal aggression",
-  "version": "1.1.1",
+  "version": "1.1.3",
   "license": "GNU AGPLv3",
   "icon": "icon.png",
   "banner": "banner.jpg",
@@ -15,25 +15,32 @@
     {
       "name": "detectionRange",
       "text": "Detection Range",
-      "type": "slider",
-      "default": 0,
-      "range": {
-        "min": 0,
-        "max": 20,
-        "decimals": 1
-      }
+      "type": "input",
+      "mode": "DecimalNumber",
+      "default": "0",
+      "member": "detectionRange",
+      "memberFallback": 0
     },
     {
       "name": "ratSpecialRule",
-      "text": "Lurkers Fear Boars",
+      "text": "Lurkers Ignore Boars",
       "type": "checkbox",
-      "default": false
+      "default": false,
+      "member": "ratSpecialRule"
     },
     {
       "name": "butlerSpecialRule",
       "text": "Botlers Don't Mind Cyborgs",
       "type": "checkbox",
-      "default": false
+      "default": false,
+      "member": "butlerSpecialRule"
+    },
+    {
+      "name": "pufferSpecialRule",
+      "text": "Puffers Ingore Anglers",
+      "type": "checkbox",
+      "default": false,
+      "member": "pufferSpecialRule"
     }
   ]
 }
